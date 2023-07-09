@@ -3,6 +3,8 @@
 // f(x)=2x;
 // f(5)=2*5;
 
+import 'dart:io';
+
 abstract class Father {
   String name = "Fuad";
   String age = "12";
@@ -58,12 +60,15 @@ class Son implements Father, Mother{
 void main() {
 
   Son son = Son();
+  String? name = stdin.readLineSync();
+
+  print(name);
 
   // print(father.name);
   // print(father.age);
   // print(father.bike);
   // print(son.names);
-  print(son.bike);
-   // print(father.add(5,10));
-  print(son.add(5,10));
+  // print(son.bike);
+  //  // print(father.add(5,10));
+  // print(son.add(5,10));
 }

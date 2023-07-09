@@ -1,5 +1,3 @@
-
-
 // f(x)=2x;
 // f(5)=2*5;
 
@@ -11,27 +9,25 @@ abstract class Father {
   String bike = "R15";
 
   int add(int x, int y) {
-    return x+y;
+    return x + y;
   }
 }
 
-abstract class Mother{
-
- minus(int x, int y) {
-
-  return x-y;
- }
+abstract class Mother {
+  minus(int x, int y) {
+    return x - y;
+  }
 }
 
-class Son implements Father, Mother{
+class Son implements Father, Mother {
   @override
-  String age="15";
+  String age = "15";
 
   @override
-  String bike="ssg";
+  String bike = "ssg";
 
   @override
-  String name="Mostafij";
+  String name = "Mostafij";
 
   @override
   int add(int x, int y) {
@@ -44,7 +40,6 @@ class Son implements Father, Mother{
     // TODO: implement minus
     throw UnimplementedError();
   }
-
 }
 
 // class Son extends Father {
@@ -58,11 +53,10 @@ class Son implements Father, Mother{
 // }
 
 void main() {
-
   Son son = Son();
   String? name = stdin.readLineSync();
-
-  print(name);
+  var age = int.parse(name!);
+  print(age.runtimeType);
 
   // print(father.name);
   // print(father.age);
